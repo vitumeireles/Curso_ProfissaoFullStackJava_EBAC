@@ -4,56 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <title>Ebac Motors</title>
+    <title>Form Cadastro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+   
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>EBAC Motors</h1>
-        <div class="menu-hamburguer">
-            <span></span>
-            <span></span>
-            <span></span>
+    <h2>Formulário de Cadastro</h2>
+    <form id="cadastroForm">
+        <label for="nome_completo">Nome Completo:</label><br>
+        <input type="text" id="nome_completo" name="nome_completo" required><br><br>
 
-        </div>
-        </div>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Em Destaque</a>
-                    </li>
-                    <li>
-                        <a href="#">Promoções</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <div id="carousel-imagens">
-        <img src="./images/slide1.png" alt="Porche">
-        <img src="./images/slide2.png" alt="BMW">
-        <img src="./images/slide3.png" alt="Ford">
-    </div>
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefone">Telefone:</label><br>
+        <input type="text" id="telefone" name="telefone" required><br><br>
+
+        <label for="cpf">CPF:</label><br>
+        <input type="text" id="cpf" name="cpf" required><br><br>
+
+        <label for="endereco">Endereço Completo:</label><br>
+        <input type="text" id="endereco" name="endereco" required><br><br>
+
+        <label for="cep">CEP:</label><br>
+        <input type="text" id="cep" name="cep" required><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#carousel-imagens').slick({autoplay:true});
-        })
-    </script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
