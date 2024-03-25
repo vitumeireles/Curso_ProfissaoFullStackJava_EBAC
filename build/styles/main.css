@@ -44,6 +44,7 @@ header .profile-avatar {
   box-shadow: 0 4px 10px 0 #000000c5;
   display: block;
   margin: 0 auto 24px;
+  border: 2px solid #e7e7e7;
   border-radius: 50%;
 }
 .profile-bio {
@@ -51,10 +52,9 @@ header .profile-avatar {
 }
 .profile-bio-name {
   font-size: 24px;
-  margin-bottom: 8px;
 }
 .profile-bio-subtitle {
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 8px;
   margin-bottom: 20px;
 }
